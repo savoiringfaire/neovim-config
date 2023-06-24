@@ -36,6 +36,7 @@ lsp.ensure_installed({
   'eslint',
   "jedi_language_server",
   "gopls",
+  "ruby_ls"
 })
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -47,6 +48,7 @@ require('lspconfig')['html'].setup          { capabilities = capabilities }
 require('lspconfig')['jedi_language_server'].setup          { capabilities = capabilities }
 require('lspconfig')['gopls'].setup          { capabilities = capabilities }
 require('lspconfig')['terraformls'].setup          { capabilities = capabilities }
+require('lspconfig')['ruby_ls'].setup { capabilities = capabilities }
 
 require('lspconfig')['lua_ls'].setup {
   capabilities = capabilities,
