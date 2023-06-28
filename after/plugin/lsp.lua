@@ -49,6 +49,10 @@ require('lspconfig')['jedi_language_server'].setup          { capabilities = cap
 require('lspconfig')['gopls'].setup          { capabilities = capabilities }
 require('lspconfig')['terraformls'].setup          { capabilities = capabilities }
 require('lspconfig')['ruby_ls'].setup { capabilities = capabilities }
+require('lspconfig')['groovyls'].setup {
+	capabilities = capabilities,
+	cmd = {"java", "-jar", "/Users/marcus.hann/groovy-language-server-all.jar"}
+}
 
 require('lspconfig')['lua_ls'].setup {
   capabilities = capabilities,
