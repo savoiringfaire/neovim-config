@@ -14,6 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'mbbill/undotree'
+  use 'dhruvasagar/vim-table-mode'
   use { 'tpope/vim-fugitive', opt = false }
 
   use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' }}
