@@ -62,7 +62,7 @@ require('lspconfig')['ruby_ls'].setup { capabilities = capabilities }
 require('lspconfig')['java_language_server'].setup { capabilities = capabilities }
 require('lspconfig')['groovyls'].setup {
 	capabilities = capabilities,
-	cmd = { "java", "-jar", "/Users/marcus.hann/groovy-language-server-all.jar" }
+	cmd = { "java", "-jar", "~/groovy-language-server-all.jar" }
 }
 
 require('lspconfig')['lua_ls'].setup {
